@@ -207,6 +207,12 @@ h3 {
 
 }
 
+.YouTube{
+  display: flex;
+  width: 10%;
+  margin-left: 8%;
+}
+
 .linkedIn{
   display: flex;
   width: 10%;
@@ -234,6 +240,12 @@ h3 {
   
 }
 
+.YouTube-rodape {
+  display: flex;
+  width: 30%;
+  margin-left: 8%;
+}
+
 .facebook-rodape-tks {
   display: flex;
   width: 30%;
@@ -254,6 +266,13 @@ h3 {
   width: 30%;
   margin-left: 8%;
   margin-top: 5%;
+}
+
+.YouTube-rodape-tks {
+  display: flex;
+  width: 30%;
+  margin-left: 8%;
+  margin-top: 5%
 }
 
 
@@ -547,4 +566,5 @@ h5{
   text-align: center;
   min-width: 50%;
 }
+
 
