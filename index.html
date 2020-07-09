@@ -220,19 +220,20 @@ src="https://www.facebook.com/tr?id=286418755747691&ev=PageView&noscript=1"
         minutos = parseInt(segundos_f / 60);
         segundos = parseInt(segundos_f % 60);
     
-    if (segundos_f < 0) {
+    if (horas > 0) {
       
     document.getElementById('dia').innerHTML = dias;
     document.getElementById('hora').innerHTML = horas;
     document.getElementById('minuto').innerHTML = minutos;
     document.getElementById('segundo').innerHTML = segundos;
 
-    }
+    } else {
 
     document.getElementById('dia').innerHTML = 0;
     document.getElementById('hora').innerHTML = 0;
     document.getElementById('minuto').innerHTML = 0;
     document.getElementById('segundo').innerHTML = 0;
+  }
          
     
     }, 1000);
@@ -283,4 +284,5 @@ src="https://www.facebook.com/tr?id=286418755747691&ev=PageView&noscript=1"
 </body>
 
 </html>
+
 
