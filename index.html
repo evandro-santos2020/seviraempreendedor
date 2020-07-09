@@ -198,21 +198,21 @@ src="https://www.facebook.com/tr?id=286418755747691&ev=PageView&noscript=1"
 </div>
 
 
-    <h5 style="margin-top: 3%; font-size: 50px;">Live "Se Vira, Empreendedor!"</h5>
+
 <script language="JavaScript1.2">
     
-    var target_date = new Date("july 08, 2020 19:00").getTime();
+    var target_date = new Date("july 08, 2020 20:00").getTime();
     var days, hours, minutes, seconds;
     var regression = document.getElementById("regression");
     
     
     setInterval(function () {
-    
+
         var current_date = new Date().getTime();
         var segundos_f = (target_date - current_date) / 1000;
     
-    dias = parseInt(segundos_f / 86400);
-    segundos_f = segundos_f % 86400;
+        dias = parseInt(segundos_f / 86400);
+        segundos_f = segundos_f % 86400;
         
         horas = parseInt(segundos_f / 3600);
         segundos_f = segundos_f % 3600;
@@ -220,16 +220,29 @@ src="https://www.facebook.com/tr?id=286418755747691&ev=PageView&noscript=1"
         minutos = parseInt(segundos_f / 60);
         segundos = parseInt(segundos_f % 60);
     
+    if (segundos_f < 0) {
+      
     document.getElementById('dia').innerHTML = dias;
     document.getElementById('hora').innerHTML = horas;
     document.getElementById('minuto').innerHTML = minutos;
     document.getElementById('segundo').innerHTML = segundos;
-      
+
+    }
+
+    document.getElementById('dia').innerHTML = 0;
+    document.getElementById('hora').innerHTML = 0;
+    document.getElementById('minuto').innerHTML = 0;
+    document.getElementById('segundo').innerHTML = 0;
+         
     
     }, 1000);
+
+
+
     
     </script>
     
+    <h5 style="margin-top: 3%; font-size: 50px;">Live Se Vira, Empreendedor!</h5>
     <div class="cronometro">
          <table><tr><td><div class="numero" id="dia"></div></td></td><td><div class="numero" id="hora"></div></td><td><div class="numero" id="minuto"></div></td><td><div class="numero" id="segundo"></div></td></tr>
         <tr style="height:20px"><td><p class="legenda">Dias</p></td><td><p class="legenda">Horas</p></td><td><p class="legenda">Min</p></td><td><p class="legenda">Seg</p></td></tr></table>
@@ -270,5 +283,4 @@ src="https://www.facebook.com/tr?id=286418755747691&ev=PageView&noscript=1"
 </body>
 
 </html>
-
 
