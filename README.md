@@ -30,5 +30,5 @@ O objetivo do projeto é criar um canal de divulgação de live para empreendedo
 
 ---
 
-Feito com ♥  by [Evandro Santos]
+Feito com ♥  by [Evandro Santos e equipe "Se vira, empreendedor"]
 
